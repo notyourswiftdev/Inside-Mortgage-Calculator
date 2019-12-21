@@ -1,1 +1,1 @@
-![Image of Mind Map](Application\ Details/Mindmap.png)
+![Image of Mind Map](Mindmap.png)
