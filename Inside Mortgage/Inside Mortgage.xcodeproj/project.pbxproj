@@ -77,8 +77,8 @@
 		1A933B9023ADD71D00F11227 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1A418C3C23B43E10001E71BA /* Settings.storyboard */,
 				1A933B8123ADD6FD00F11227 /* Main.storyboard */,
+				1A418C3C23B43E10001E71BA /* Settings.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
