@@ -7,15 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A15FD6123B58D55003B0079 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A15FD6023B58D55003B0079 /* SettingsTableViewController.swift */; };
 		1A418C3E23B43E10001E71BA /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A418C3C23B43E10001E71BA /* Settings.storyboard */; };
 		1A933B7C23ADD6FD00F11227 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A933B7B23ADD6FD00F11227 /* AppDelegate.swift */; };
 		1A933B7E23ADD6FD00F11227 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A933B7D23ADD6FD00F11227 /* SceneDelegate.swift */; };
 		1A933B8323ADD6FD00F11227 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A933B8123ADD6FD00F11227 /* Main.storyboard */; };
 		1A933B8523ADD6FD00F11227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A933B8423ADD6FD00F11227 /* Assets.xcassets */; };
 		1A933B8823ADD6FD00F11227 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A933B8623ADD6FD00F11227 /* LaunchScreen.storyboard */; };
+		4986311BACD8D47D96AB4BB2 /* Pods_Inside_Mortgage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27047D738DB359E69FF1923 /* Pods_Inside_Mortgage.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1ADEBBBA23B802040083F744 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1A15FD6023B58D55003B0079 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		1A418C3D23B43E10001E71BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Inside Mortgage/Views/Base.lproj/Settings.storyboard"; sourceTree = "<group>"; };
 		1A933B7823ADD6FD00F11227 /* Inside Mortgage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Inside Mortgage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A933B7B23ADD6FD00F11227 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +40,9 @@
 		1A933B8423ADD6FD00F11227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A933B8723ADD6FD00F11227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A933B8923ADD6FD00F11227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		916485C4A335678FC00440CF /* Pods-Inside Mortgage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inside Mortgage.release.xcconfig"; path = "Target Support Files/Pods-Inside Mortgage/Pods-Inside Mortgage.release.xcconfig"; sourceTree = "<group>"; };
+		B999119013A5AC9BC5FDB336 /* Pods-Inside Mortgage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inside Mortgage.debug.xcconfig"; path = "Target Support Files/Pods-Inside Mortgage/Pods-Inside Mortgage.debug.xcconfig"; sourceTree = "<group>"; };
+		D27047D738DB359E69FF1923 /* Pods_Inside_Mortgage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Inside_Mortgage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +50,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4986311BACD8D47D96AB4BB2 /* Pods_Inside_Mortgage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A15FD5E23B58D3C003B0079 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A15FD5F23B58D43003B0079 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A15FD6023B58D55003B0079 /* SettingsTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		1A933B6F23ADD6FD00F11227 = {
 			isa = PBXGroup;
 			children = (
 				1A933B7A23ADD6FD00F11227 /* Inside Mortgage */,
 				1A933B7923ADD6FD00F11227 /* Products */,
+				54ECBD4863618C227CFE0CB4 /* Pods */,
+				D271E907CB9DA3513FF4ADC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +93,8 @@
 		1A933B7A23ADD6FD00F11227 /* Inside Mortgage */ = {
 			isa = PBXGroup;
 			children = (
+				1A15FD5F23B58D43003B0079 /* Controllers */,
+				1A15FD5E23B58D3C003B0079 /* Model */,
 				1A933B8F23ADD70E00F11227 /* Resources */,
 				1A933B9023ADD71D00F11227 /* Views */,
 			);
@@ -83,6 +122,24 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		54ECBD4863618C227CFE0CB4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B999119013A5AC9BC5FDB336 /* Pods-Inside Mortgage.debug.xcconfig */,
+				916485C4A335678FC00440CF /* Pods-Inside Mortgage.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D271E907CB9DA3513FF4ADC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D27047D738DB359E69FF1923 /* Pods_Inside_Mortgage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -90,9 +147,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A933B8C23ADD6FD00F11227 /* Build configuration list for PBXNativeTarget "Inside Mortgage" */;
 			buildPhases = (
+				5A950FE0DDB5CA557AA88E95 /* [CP] Check Pods Manifest.lock */,
 				1A933B7423ADD6FD00F11227 /* Sources */,
 				1A933B7523ADD6FD00F11227 /* Frameworks */,
 				1A933B7623ADD6FD00F11227 /* Resources */,
+				1ADEBBBA23B802040083F744 /* Embed Frameworks */,
+				F963B487F58F253BC8FB0CD9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -150,6 +210,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5A950FE0DDB5CA557AA88E95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Inside Mortgage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F963B487F58F253BC8FB0CD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Inside Mortgage/Pods-Inside Mortgage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Inside Mortgage/Pods-Inside Mortgage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Inside Mortgage/Pods-Inside Mortgage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1A933B7423ADD6FD00F11227 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -157,6 +259,7 @@
 			files = (
 				1A933B7C23ADD6FD00F11227 /* AppDelegate.swift in Sources */,
 				1A933B7E23ADD6FD00F11227 /* SceneDelegate.swift in Sources */,
+				1A15FD6123B58D55003B0079 /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +409,7 @@
 		};
 		1A933B8D23ADD6FD00F11227 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B999119013A5AC9BC5FDB336 /* Pods-Inside Mortgage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -324,6 +428,7 @@
 		};
 		1A933B8E23ADD6FD00F11227 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 916485C4A335678FC00440CF /* Pods-Inside Mortgage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
