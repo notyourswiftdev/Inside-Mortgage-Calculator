@@ -1,19 +1,15 @@
 //
-//  SettingsTableViewController.swift
+//  SavedLoanTableViewController.swift
 //  Inside Mortgage
 //
-//  Created by Aaron Cleveland on 12/26/19.
+//  Created by Aaron Cleveland on 12/28/19.
 //  Copyright © 2019 Aaron Cleveland. All rights reserved.
 //
 
 import UIKit
 
-class SettingsTableViewController: UITableViewController {
-    
-    //MARK: IBOutlets
-    
-    @IBOutlet weak var settingsTableView: UITableView!
-    
+class SavedLoanTableViewController: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -80,12 +76,6 @@ class SettingsTableViewController: UITableViewController {
         return true
     }
     */
-    
-    // MARK: - IBActions
-    @IBAction func enableDarkMode(_ sender: Any) {
-        
-    }
-    
 
     /*
     // MARK: - Navigation
