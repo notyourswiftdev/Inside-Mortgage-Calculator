@@ -40,7 +40,7 @@
                                             </stackView>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="utN-DG-1dg">
                                                 <rect key="frame" x="-2" y="35" width="378" height="31"/>
-                                                <color key="tintColor" name="Teal"/>
+                                                <color key="tintColor" name="Navy Blue"/>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -65,7 +65,7 @@
                                             </stackView>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yCH-xV-M2D">
                                                 <rect key="frame" x="-2" y="35" width="378" height="31"/>
-                                                <color key="tintColor" name="Teal"/>
+                                                <color key="tintColor" name="Navy Blue"/>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -90,7 +90,7 @@
                                             </stackView>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tKz-9s-Xsw">
                                                 <rect key="frame" x="-2" y="35" width="378" height="31"/>
-                                                <color key="tintColor" name="Teal"/>
+                                                <color key="tintColor" name="Navy Blue"/>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -115,7 +115,7 @@
                                             </stackView>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bXR-E4-zgm">
                                                 <rect key="frame" x="-2" y="35" width="378" height="31"/>
-                                                <color key="tintColor" name="Teal"/>
+                                                <color key="tintColor" name="Navy Blue"/>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -140,7 +140,7 @@
                                             </stackView>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Pgp-Fh-ewK">
                                                 <rect key="frame" x="-2" y="35" width="378" height="31"/>
-                                                <color key="tintColor" name="Teal"/>
+                                                <color key="tintColor" name="Navy Blue"/>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -153,7 +153,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="Ashblaster"/>
                         <constraints>
                             <constraint firstItem="C8X-hc-t4a" firstAttribute="leading" secondItem="jSQ-qJ-SFd" secondAttribute="leading" constant="20" id="FOy-rj-5qt"/>
                             <constraint firstItem="z4Z-zD-dCb" firstAttribute="leading" secondItem="jSQ-qJ-SFd" secondAttribute="leading" constant="20" id="HnO-LN-vQf"/>
@@ -179,8 +179,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rfb-Yw-BAm">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.12156862745098039" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="selectedImageTintColor" name="Orange-Yellow"/>
+                        <color key="barTintColor" name="Navy Blue"/>
+                        <color key="selectedImageTintColor" name="Ashblaster"/>
                     </tabBar>
                     <connections>
                         <segue destination="bbC-l7-8q6" kind="relationship" relationship="viewControllers" id="HMF-qo-J4m"/>
@@ -210,49 +210,80 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6ux-z1-pIn">
-                                <rect key="frame" x="0.0" y="148" width="414" height="665"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="81o-EY-tSY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="5Yw-3b-j2t">
+                                        <rect key="frame" x="20" y="124" width="374" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="Ashblaster"/>
+                                        <segments>
+                                            <segment title="30 Year"/>
+                                            <segment title="15 Year"/>
+                                            <segment title="5/1 ARAM"/>
+                                        </segments>
+                                        <color key="selectedSegmentTintColor" name="Brown"/>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Rates" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0I-dJ-ybM">
+                                        <rect key="frame" x="142.5" y="51" width="130.5" height="26.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" name="Ashblaster"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" fixedFrame="YES" text="(Date)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlU-mg-1Uk">
+                                        <rect key="frame" x="177" y="85.5" width="60" height="26.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" name="Ashblaster"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Navy Blue"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6ux-z1-pIn">
+                                <rect key="frame" x="0.0" y="171" width="414" height="642"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="l9A-Fl-NGq">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l9A-Fl-NGq" id="Ou6-0Q-c6y">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="106" translatesAutoresizingMaskIntoConstraints="NO" id="LOL-fh-pNY">
+                                                    <rect key="frame" x="14" y="12" width="386.5" height="20.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BankName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TyE-aA-35U">
+                                                            <rect key="frame" x="0.0" y="0.0" width="83.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFt-Z9-efy">
+                                                            <rect key="frame" x="189.5" y="0.0" width="58.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9s-zT-yjy">
+                                                            <rect key="frame" x="354" y="0.0" width="32.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current rates of (Date)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0I-dJ-ybM">
-                                <rect key="frame" x="20" y="44" width="374" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hnu-U5-E7R">
-                                <rect key="frame" x="20" y="109" width="374" height="32"/>
-                                <segments>
-                                    <segment title="15 Year"/>
-                                    <segment title="30 Year"/>
-                                    <segment title=""/>
-                                </segments>
-                                <color key="selectedSegmentTintColor" name="Orange-Yellow"/>
-                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="6ux-z1-pIn" firstAttribute="leading" secondItem="pmK-lq-HI9" secondAttribute="leading" id="3ez-1R-9I0"/>
-                            <constraint firstItem="hnu-U5-E7R" firstAttribute="top" secondItem="s0I-dJ-ybM" secondAttribute="bottom" constant="41" id="768-D6-Nxb"/>
-                            <constraint firstItem="pmK-lq-HI9" firstAttribute="trailing" secondItem="hnu-U5-E7R" secondAttribute="trailing" constant="20" id="Nmj-vH-Xcw"/>
-                            <constraint firstItem="s0I-dJ-ybM" firstAttribute="leading" secondItem="pmK-lq-HI9" secondAttribute="leading" constant="20" id="aoj-sY-Fdr"/>
-                            <constraint firstItem="pmK-lq-HI9" firstAttribute="trailing" secondItem="s0I-dJ-ybM" secondAttribute="trailing" constant="20" id="bRN-pu-fTz"/>
-                            <constraint firstItem="6ux-z1-pIn" firstAttribute="bottom" secondItem="pmK-lq-HI9" secondAttribute="bottom" id="dNz-KM-ige"/>
-                            <constraint firstItem="s0I-dJ-ybM" firstAttribute="top" secondItem="pmK-lq-HI9" secondAttribute="top" id="dxX-Rt-f7U"/>
-                            <constraint firstItem="hnu-U5-E7R" firstAttribute="leading" secondItem="pmK-lq-HI9" secondAttribute="leading" constant="20" id="i4Q-iw-hEX"/>
-                            <constraint firstItem="6ux-z1-pIn" firstAttribute="trailing" secondItem="pmK-lq-HI9" secondAttribute="trailing" id="i9b-VR-7bs"/>
-                            <constraint firstItem="6ux-z1-pIn" firstAttribute="top" secondItem="hnu-U5-E7R" secondAttribute="bottom" constant="8" id="vM4-d5-XUq"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pmK-lq-HI9"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Rates" image="percent" catalog="system" id="ga6-z4-Y8I"/>
@@ -260,18 +291,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MVw-lO-3sP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-468" y="1015"/>
+            <point key="canvasLocation" x="-468.11594202898556" y="1014.5089285714286"/>
         </scene>
     </scenes>
     <resources>
         <image name="gear" catalog="system" width="64" height="58"/>
         <image name="percent" catalog="system" width="64" height="58"/>
         <image name="plusminus.circle" catalog="system" width="64" height="60"/>
-        <namedColor name="Orange-Yellow">
-            <color red="0.93699997663497925" green="0.79600000381469727" blue="0.40799999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Ashblaster">
+            <color red="0.94901960784313721" green="0.98039215686274506" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <namedColor name="Teal">
-            <color red="0.22400000691413879" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Brown">
+            <color red="0.39215686274509803" green="0.33725490196078434" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Navy Blue">
+            <color red="0.090196078431372548" green="0.14117647058823529" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
