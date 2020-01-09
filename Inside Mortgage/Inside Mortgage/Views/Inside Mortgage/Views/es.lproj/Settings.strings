@@ -1,0 +1,9 @@
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "7S5-p9-KZl"; */
+"7S5-p9-KZl.title" = "Settings";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "T38-bb-6um"; */
+"T38-bb-6um.text" = "Label";
+
+/* Class = "UILabel"; text = "Dark Mode"; ObjectID = "c4j-8I-onZ"; */
+"c4j-8I-onZ.text" = "Dark Mode";

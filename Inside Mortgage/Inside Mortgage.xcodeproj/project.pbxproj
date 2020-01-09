@@ -7,18 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A418C3E23B43E10001E71BA /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A418C3C23B43E10001E71BA /* Settings.storyboard */; };
-		1A83BCAF23B85FC5006B98C7 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A83BCAE23B85FC5006B98C7 /* SettingsTableViewCell.swift */; };
-		1A83BCB123B864A0006B98C7 /* SavedLoanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A83BCB023B864A0006B98C7 /* SavedLoanTableViewController.swift */; };
-		1A83BCB323B8673F006B98C7 /* DarkModdeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A83BCB223B8673F006B98C7 /* DarkModdeTableViewCell.swift */; };
 		1A933B7C23ADD6FD00F11227 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A933B7B23ADD6FD00F11227 /* AppDelegate.swift */; };
 		1A933B7E23ADD6FD00F11227 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A933B7D23ADD6FD00F11227 /* SceneDelegate.swift */; };
 		1A933B8323ADD6FD00F11227 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A933B8123ADD6FD00F11227 /* Main.storyboard */; };
 		1A933B8523ADD6FD00F11227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A933B8423ADD6FD00F11227 /* Assets.xcassets */; };
 		1A933B8823ADD6FD00F11227 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A933B8623ADD6FD00F11227 /* LaunchScreen.storyboard */; };
-		1A9D106023BB2F560041C051 /* RatesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9D105F23BB2F560041C051 /* RatesTableViewController.swift */; };
+		1AAEDBEE23C2DB0800846350 /* LoanModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEDBED23C2DB0800846350 /* LoanModelController.swift */; };
 		1ABA6D6F23B80AC00003AB12 /* MortgageCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA6D6E23B80AC00003AB12 /* MortgageCalcViewController.swift */; };
-		1AE48FAA23B8448E00463715 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE48FA923B8448E00463715 /* SettingsTableViewController.swift */; };
+		1AE06D3A23C67BEE00CA7F87 /* LoanData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE06D3923C67BEE00CA7F87 /* LoanData.swift */; };
+		1AE161C623C63F6F00E0A605 /* RatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE161C523C63F6F00E0A605 /* RatesViewController.swift */; };
 		4986311BACD8D47D96AB4BB2 /* Pods_Inside_Mortgage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27047D738DB359E69FF1923 /* Pods_Inside_Mortgage.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,10 +33,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1A418C3D23B43E10001E71BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Inside Mortgage/Views/Base.lproj/Settings.storyboard"; sourceTree = "<group>"; };
-		1A83BCAE23B85FC5006B98C7 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
-		1A83BCB023B864A0006B98C7 /* SavedLoanTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLoanTableViewController.swift; sourceTree = "<group>"; };
-		1A83BCB223B8673F006B98C7 /* DarkModdeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModdeTableViewCell.swift; sourceTree = "<group>"; };
 		1A933B7823ADD6FD00F11227 /* Inside Mortgage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Inside Mortgage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A933B7B23ADD6FD00F11227 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A933B7D23ADD6FD00F11227 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,9 +40,10 @@
 		1A933B8423ADD6FD00F11227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A933B8723ADD6FD00F11227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A933B8923ADD6FD00F11227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A9D105F23BB2F560041C051 /* RatesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesTableViewController.swift; sourceTree = "<group>"; };
+		1AAEDBED23C2DB0800846350 /* LoanModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanModelController.swift; sourceTree = "<group>"; };
 		1ABA6D6E23B80AC00003AB12 /* MortgageCalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortgageCalcViewController.swift; sourceTree = "<group>"; };
-		1AE48FA923B8448E00463715 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		1AE06D3923C67BEE00CA7F87 /* LoanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanData.swift; sourceTree = "<group>"; };
+		1AE161C523C63F6F00E0A605 /* RatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesViewController.swift; sourceTree = "<group>"; };
 		916485C4A335678FC00440CF /* Pods-Inside Mortgage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inside Mortgage.release.xcconfig"; path = "Target Support Files/Pods-Inside Mortgage/Pods-Inside Mortgage.release.xcconfig"; sourceTree = "<group>"; };
 		B999119013A5AC9BC5FDB336 /* Pods-Inside Mortgage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inside Mortgage.debug.xcconfig"; path = "Target Support Files/Pods-Inside Mortgage/Pods-Inside Mortgage.debug.xcconfig"; sourceTree = "<group>"; };
 		D27047D738DB359E69FF1923 /* Pods_Inside_Mortgage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Inside_Mortgage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +64,7 @@
 		1A15FD5E23B58D3C003B0079 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1AE06D3923C67BEE00CA7F87 /* LoanData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -128,9 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				1A933B8123ADD6FD00F11227 /* Main.storyboard */,
-				1A418C3C23B43E10001E71BA /* Settings.storyboard */,
-				1A83BCAE23B85FC5006B98C7 /* SettingsTableViewCell.swift */,
-				1A83BCB223B8673F006B98C7 /* DarkModdeTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -139,9 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				1ABA6D6E23B80AC00003AB12 /* MortgageCalcViewController.swift */,
-				1AE48FA923B8448E00463715 /* SettingsTableViewController.swift */,
-				1A83BCB023B864A0006B98C7 /* SavedLoanTableViewController.swift */,
-				1A9D105F23BB2F560041C051 /* RatesTableViewController.swift */,
+				1AE161C523C63F6F00E0A605 /* RatesViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -149,6 +139,7 @@
 		1AE48FA623B842D500463715 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1AAEDBED23C2DB0800846350 /* LoanModelController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -234,7 +225,6 @@
 				1A933B8823ADD6FD00F11227 /* LaunchScreen.storyboard in Resources */,
 				1A933B8523ADD6FD00F11227 /* Assets.xcassets in Resources */,
 				1A933B8323ADD6FD00F11227 /* Main.storyboard in Resources */,
-				1A418C3E23B43E10001E71BA /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,28 +277,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AE48FAA23B8448E00463715 /* SettingsTableViewController.swift in Sources */,
 				1A933B7C23ADD6FD00F11227 /* AppDelegate.swift in Sources */,
+				1AAEDBEE23C2DB0800846350 /* LoanModelController.swift in Sources */,
 				1A933B7E23ADD6FD00F11227 /* SceneDelegate.swift in Sources */,
-				1A83BCB323B8673F006B98C7 /* DarkModdeTableViewCell.swift in Sources */,
-				1A83BCAF23B85FC5006B98C7 /* SettingsTableViewCell.swift in Sources */,
+				1AE161C623C63F6F00E0A605 /* RatesViewController.swift in Sources */,
 				1ABA6D6F23B80AC00003AB12 /* MortgageCalcViewController.swift in Sources */,
-				1A83BCB123B864A0006B98C7 /* SavedLoanTableViewController.swift in Sources */,
-				1A9D106023BB2F560041C051 /* RatesTableViewController.swift in Sources */,
+				1AE06D3A23C67BEE00CA7F87 /* LoanData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1A418C3C23B43E10001E71BA /* Settings.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A418C3D23B43E10001E71BA /* Base */,
-			);
-			name = Settings.storyboard;
-			sourceTree = "<group>";
-		};
 		1A933B8123ADD6FD00F11227 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -332,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -392,6 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

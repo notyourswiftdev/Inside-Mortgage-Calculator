@@ -1,0 +1,66 @@
+
+/* Class = "UISegmentedControl"; 5Yw-3b-j2t.segmentTitles[0] = "30 Year"; ObjectID = "5Yw-3b-j2t"; */
+"5Yw-3b-j2t.segmentTitles[0]" = "30 Year";
+
+/* Class = "UISegmentedControl"; 5Yw-3b-j2t.segmentTitles[1] = "15 Year"; ObjectID = "5Yw-3b-j2t"; */
+"5Yw-3b-j2t.segmentTitles[1]" = "15 Year";
+
+/* Class = "UISegmentedControl"; 5Yw-3b-j2t.segmentTitles[2] = "5/1 ARAM"; ObjectID = "5Yw-3b-j2t"; */
+"5Yw-3b-j2t.segmentTitles[2]" = "5/1 ARAM";
+
+/* Class = "UITextField"; placeholder = "$0"; ObjectID = "5te-Ba-v4P"; */
+"5te-Ba-v4P.placeholder" = "$0";
+
+/* Class = "UILabel"; text = "APR"; ObjectID = "B9s-zT-yjy"; */
+"B9s-zT-yjy.text" = "APR";
+
+/* Class = "UITabBarItem"; title = "Mortgage Calculator"; ObjectID = "BOj-Ji-581"; */
+"BOj-Ji-581.title" = "Mortgage Calculator";
+
+/* Class = "UILabel"; text = "Total Monthly Payment: (payment)"; ObjectID = "C8X-hc-t4a"; */
+"C8X-hc-t4a.text" = "Total Monthly Payment: (payment)";
+
+/* Class = "UITextField"; placeholder = "$0"; ObjectID = "D4z-jz-WkI"; */
+"D4z-jz-WkI.placeholder" = "$0";
+
+/* Class = "UITextField"; placeholder = "$0"; ObjectID = "DsS-Pq-seB"; */
+"DsS-Pq-seB.placeholder" = "$0";
+
+/* Class = "UILabel"; text = "Home Price"; ObjectID = "FLQ-bq-V3o"; */
+"FLQ-bq-V3o.text" = "Home Price";
+
+/* Class = "UITextField"; placeholder = "$0"; ObjectID = "P7u-4z-ZRd"; */
+"P7u-4z-ZRd.placeholder" = "$0";
+
+/* Class = "UITextField"; placeholder = "$0"; ObjectID = "R3n-2n-xwo"; */
+"R3n-2n-xwo.placeholder" = "$0";
+
+/* Class = "UILabel"; text = "Rate"; ObjectID = "RJH-o0-slt"; */
+"RJH-o0-slt.text" = "Rate";
+
+/* Class = "UILabel"; text = "BankName"; ObjectID = "TyE-aA-35U"; */
+"TyE-aA-35U.text" = "BankName";
+
+/* Class = "UILabel"; text = "Taxes"; ObjectID = "Y0Q-3J-tJW"; */
+"Y0Q-3J-tJW.text" = "Taxes";
+
+/* Class = "UILabel"; text = "Interest"; ObjectID = "dFt-Z9-efy"; */
+"dFt-Z9-efy.text" = "Interest";
+
+/* Class = "UITabBarItem"; title = "Rates"; ObjectID = "ga6-z4-Y8I"; */
+"ga6-z4-Y8I.title" = "Rates";
+
+/* Class = "UILabel"; text = "Term"; ObjectID = "iCN-MI-8ug"; */
+"iCN-MI-8ug.text" = "Term";
+
+/* Class = "UILabel"; text = "(Date)"; ObjectID = "mlU-mg-1Uk"; */
+"mlU-mg-1Uk.text" = "(Date)";
+
+/* Class = "UILabel"; text = "Down Payment"; ObjectID = "ngu-gt-TMz"; */
+"ngu-gt-TMz.text" = "Down Payment";
+
+/* Class = "UILabel"; text = "Current Rates"; ObjectID = "s0I-dJ-ybM"; */
+"s0I-dJ-ybM.text" = "Current Rates";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "ssY-fG-993"; */
+"ssY-fG-993.title" = "Settings";
