@@ -40,11 +40,10 @@ class LoanModelController {
         return currencyFormatter(xxx: Float(monthlyInterest))
     }
     
-    func createNumberOfPayments(with termLife: Double?, numberOfPayments: Double? = 12.0) -> String {
-        guard let unwrapTerm = termLife,
-            let unwrapNOP = numberOfPayments else { return "" }
-        let numberOfPayments = unwrapTerm * unwrapNOP
-        return String(numberOfPayments)
+    func createNumberOfPayments(with termLife: Double?) -> String {
+        guard let unwrapTerm = termLife else { return "" }
+        loan.numberOfPayments = unwrapTerm
+        return String(unwrapTerm)
     }
     
     func currencyFormatter(xxx: Float) -> String {

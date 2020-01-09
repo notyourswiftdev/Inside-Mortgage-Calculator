@@ -38,7 +38,7 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1000000" translatesAutoresizingMaskIntoConstraints="NO" id="utN-DG-1dg">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1000000" translatesAutoresizingMaskIntoConstraints="NO" id="utN-DG-1dg">
                                                 <rect key="frame" x="-2" y="35" width="378" height="31"/>
                                                 <color key="tintColor" name="Navy Blue"/>
                                                 <connections>
@@ -66,7 +66,7 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1000000" translatesAutoresizingMaskIntoConstraints="NO" id="yCH-xV-M2D">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1000000" translatesAutoresizingMaskIntoConstraints="NO" id="yCH-xV-M2D">
                                                 <rect key="frame" x="-2" y="35" width="378" height="31"/>
                                                 <color key="tintColor" name="Navy Blue"/>
                                                 <connections>
@@ -94,7 +94,7 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="SRU-Fz-6MK">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="SRU-Fz-6MK">
                                                 <rect key="frame" x="-2" y="35" width="378" height="31"/>
                                                 <color key="tintColor" name="Navy Blue"/>
                                                 <connections>
@@ -123,7 +123,7 @@
                                                         </segments>
                                                         <color key="selectedSegmentTintColor" name="Brown"/>
                                                         <connections>
-                                                            <action selector="termPeriodSegment:" destination="bbC-l7-8q6" eventType="valueChanged" id="tyK-AY-CDP"/>
+                                                            <action selector="termSegment:" destination="bbC-l7-8q6" eventType="valueChanged" id="Yo3-lP-eiR"/>
                                                         </connections>
                                                     </segmentedControl>
                                                 </subviews>

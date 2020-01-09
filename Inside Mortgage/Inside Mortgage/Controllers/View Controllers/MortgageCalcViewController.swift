@@ -13,6 +13,7 @@ class MortgageCalcViewController: UIViewController {
     
     //MARK: - Variables
     let loanModel = LoanModelController()
+    var term = 0
     
     //MARK: - IBOutlet
 //    @IBOutlet var chartsView: PieChartView!
@@ -36,6 +37,7 @@ class MortgageCalcViewController: UIViewController {
         super.viewDidLoad()
         homePriceTextField.delegate = self
         downPaymentTextField.delegate = self
+        termSegment.addTarget(self, action: #selector(MortgageCalcViewController.termSegment(_:)), for: .valueChanged)
         update()
     }
     
@@ -55,21 +57,25 @@ class MortgageCalcViewController: UIViewController {
         update()
     }
     
-    @IBAction func termPeriodSegment(_ sender: Any) {
-        if (termSegment.selectedSegmentIndex == 0) {
-            termSegment.selectedSegmentIndex = 30
-        }
-        else if(termSegment.selectedSegmentIndex == 1) {
-            termSegment.selectedSegmentIndex = 15
+    @IBAction func termSegment(_ sender: UISegmentedControl) {
+        switch termSegment.selectedSegmentIndex {
+        case 0:
+            term = 30
+        case 1:
+            term = 15
+        default:
+            break
         }
         update()
     }
+    
+    
     
     //MARK: - Helper Functions
     func update() {
         principleLabel.text = loanModel.createPrinciple(with: Double(homeSlider.value), downPayment: Double(downPaymentSlider.value))
         interestLabel.text = loanModel.createInterestRate(with: Double(ratesSlider.value))
-        numberOfPaymentsLabel.text = loanModel.createNumberOfPayments(with: Double())
+        numberOfPaymentsLabel.text = loanModel.createNumberOfPayments(with: Double(term) * 12.0)
 //        monthlyPaymentsLabel.text = loanModel.createMonthlyPayment(with: Double(homeSlider.value), downPayment: Double(downPaymentSlider.value), interestRate: Double(ratesSlider.value), termPeriod: Double(termSegment.selectedSegmentIndex))
     }
 }
