@@ -43,40 +43,38 @@ class MortgageCalcViewController: UIViewController {
     
     //MARK: - IBActions
     @IBAction func homePricedSlider(_ sender: Any) {
-        homePriceTextField.text = loanModel.currencyFormatter(xxx: homeSlider.value)
+        homePriceTextField.text = loanModel.currencyFormatter(xxx: Double(homeSlider.value))
         update()
     }
     
     @IBAction func downPaySlider(_ sender: Any) {
-        downPaymentTextField.text = loanModel.currencyFormatter(xxx: downPaymentSlider.value)
+        downPaymentTextField.text = loanModel.currencyFormatter(xxx: Double(downPaymentSlider.value))
         update()
     }
     
     @IBAction func ratesInterestSlider(_ sender: Any) {
-        ratesTextField.text = loanModel.percentFormatter(xxx: ratesSlider.value)
+        ratesTextField.text = loanModel.percentFormatter(xxx: Double(ratesSlider.value))
         update()
     }
     
     @IBAction func termSegment(_ sender: UISegmentedControl) {
         switch termSegment.selectedSegmentIndex {
         case 0:
-            term = 30
+            term = 360
         case 1:
-            term = 15
+            term = 180
         default:
             break
         }
         update()
     }
     
-    
-    
     //MARK: - Helper Functions
     func update() {
         principleLabel.text = loanModel.createPrinciple(with: Double(homeSlider.value), downPayment: Double(downPaymentSlider.value))
-        interestLabel.text = loanModel.createInterestRate(with: Double(ratesSlider.value))
-        numberOfPaymentsLabel.text = loanModel.createNumberOfPayments(with: Double(term) * 12.0)
-//        monthlyPaymentsLabel.text = loanModel.createMonthlyPayment(with: Double(homeSlider.value), downPayment: Double(downPaymentSlider.value), interestRate: Double(ratesSlider.value), termPeriod: Double(termSegment.selectedSegmentIndex))
+        numberOfPaymentsLabel.text = loanModel.createNumberOfPayments(with: Double(term))
+        interestLabel.text = "\(loanModel.createInterestRate(with: Double(ratesSlider.value)))%"
+        monthlyPaymentsLabel.text = loanModel.createMonthlyPayments(with: Double(homeSlider.value), downPay: Double(downPaymentSlider.value), annualRate: Double(ratesSlider.value), termLife: Double(term))
     }
 }
 

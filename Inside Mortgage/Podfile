@@ -6,5 +6,4 @@ target 'Inside Mortgage' do
   use_frameworks!
 
   # Pods for Inside Mortgage
-pod 'Charts'
 end
