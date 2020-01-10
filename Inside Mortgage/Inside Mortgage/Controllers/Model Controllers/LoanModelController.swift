@@ -9,14 +9,6 @@
 import Foundation
 import UIKit
 
-// Step1: monthlyInterest = divide annual percent by 12(months)
-// Step2: add 1 to the monthlyInterest
-// Step3: multiply termLife(30 or 15 years) by 12(months of payment)(360 or 180)
-// Step4: raise the monthlyInterest to the negative power of the termLife payments(360 or 180)
-// Step5: subtract the new monthlyInterest from 1
-// Step6: divide the old monthlyInterest(before adding the 1) by the number in step5
-// Step7: multiply the number from step6 by loanAmount = monthly payment
-
 class LoanModelController {
     
     func createPrinciple(with homePrice: Double?, downPayment: Double?) -> String {
@@ -31,7 +23,7 @@ class LoanModelController {
         return percentFormatter(xxx: Double(1+(monthlyInterest / 100)))
     }
     
-    func createNumberOfPayments(with termLife: Double?) -> String {
+    func createNumberOfPayments(with termLife: Int?) -> String {
         guard let unwrapTerm = termLife else { return "0" }
         return String(unwrapTerm)
     }

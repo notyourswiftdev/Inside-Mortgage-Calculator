@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Charts
 
 class MortgageCalcViewController: ShiftableViewController {
     
@@ -16,20 +15,20 @@ class MortgageCalcViewController: ShiftableViewController {
     var term = 360
     
     //MARK: - IBOutlet
-//    @IBOutlet var chartsView: PieChartView!
+    //UILabel Outlets
     @IBOutlet weak var monthlyPaymentsLabel: UILabel!
     @IBOutlet weak var principleLabel: UILabel!
     @IBOutlet weak var interestLabel: UILabel!
     @IBOutlet weak var numberOfPaymentsLabel: UILabel!
-    //textfield outlets
+    //TextField Outlets
     @IBOutlet weak var homePriceTextField: UITextField!
     @IBOutlet weak var downPaymentTextField: UITextField!
     @IBOutlet weak var ratesTextField: UITextField!
-    //slider outlets
+    //Slider Outlets
     @IBOutlet weak var homeSlider: UISlider!
     @IBOutlet weak var downPaymentSlider: UISlider!
     @IBOutlet weak var ratesSlider: UISlider!
-    //segmented outlets
+    //Segment Outlets
     @IBOutlet weak var termSegment: UISegmentedControl!
     
     //MARK: - LifeCycle
@@ -73,8 +72,8 @@ class MortgageCalcViewController: ShiftableViewController {
     //MARK: - Helper Functions
     func update() {
         principleLabel.text = loanModel.createPrinciple(with: Double(homeSlider.value), downPayment: Double(downPaymentSlider.value))
-        numberOfPaymentsLabel.text = loanModel.createNumberOfPayments(with: Double(term))
-        interestLabel.text = "\(loanModel.createInterestRate(with: Double(ratesSlider.value)))%"
+        numberOfPaymentsLabel.text = "\(loanModel.createNumberOfPayments(with: Int(term))) Months"
+        interestLabel.text = "\(ratesSlider.value)%"
         monthlyPaymentsLabel.text = loanModel.createMonthlyPayments(with: Double(homeSlider.value), downPay: Double(downPaymentSlider.value), annualRate: Double(ratesSlider.value), termLife: Double(term))
     }
 }
