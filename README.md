@@ -5,9 +5,5 @@ Hi! This application is for the everyday consumer that is looking to purchase th
 ### Trello
  - [Trello Board](https://trello.com/b/ccWc1xR5)
 
-## Top Features
- - Graph design to display loan information
- - Save loans
-
 ## Mind Map
 ![Image of Mind Map](Mindmap.png)
