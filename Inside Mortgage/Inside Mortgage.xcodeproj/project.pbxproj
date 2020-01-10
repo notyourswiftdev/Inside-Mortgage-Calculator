@@ -14,6 +14,7 @@
 		1A933B8823ADD6FD00F11227 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A933B8623ADD6FD00F11227 /* LaunchScreen.storyboard */; };
 		1AAEDBEE23C2DB0800846350 /* LoanModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEDBED23C2DB0800846350 /* LoanModelController.swift */; };
 		1ABA6D6F23B80AC00003AB12 /* MortgageCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA6D6E23B80AC00003AB12 /* MortgageCalcViewController.swift */; };
+		1ACBAF3D23C7F37F00FBF910 /* ShiftableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACBAF3C23C7F37F00FBF910 /* ShiftableViewController.swift */; };
 		1AE06D3A23C67BEE00CA7F87 /* LoanData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE06D3923C67BEE00CA7F87 /* LoanData.swift */; };
 		1AE161C623C63F6F00E0A605 /* RatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE161C523C63F6F00E0A605 /* RatesViewController.swift */; };
 		4986311BACD8D47D96AB4BB2 /* Pods_Inside_Mortgage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27047D738DB359E69FF1923 /* Pods_Inside_Mortgage.framework */; };
@@ -42,6 +43,7 @@
 		1A933B8923ADD6FD00F11227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AAEDBED23C2DB0800846350 /* LoanModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanModelController.swift; sourceTree = "<group>"; };
 		1ABA6D6E23B80AC00003AB12 /* MortgageCalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortgageCalcViewController.swift; sourceTree = "<group>"; };
+		1ACBAF3C23C7F37F00FBF910 /* ShiftableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftableViewController.swift; sourceTree = "<group>"; };
 		1AE06D3923C67BEE00CA7F87 /* LoanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanData.swift; sourceTree = "<group>"; };
 		1AE161C523C63F6F00E0A605 /* RatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesViewController.swift; sourceTree = "<group>"; };
 		916485C4A335678FC00440CF /* Pods-Inside Mortgage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inside Mortgage.release.xcconfig"; path = "Target Support Files/Pods-Inside Mortgage/Pods-Inside Mortgage.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				1ABA6D6E23B80AC00003AB12 /* MortgageCalcViewController.swift */,
 				1AE161C523C63F6F00E0A605 /* RatesViewController.swift */,
+				1ACBAF3C23C7F37F00FBF910 /* ShiftableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			files = (
 				1A933B7C23ADD6FD00F11227 /* AppDelegate.swift in Sources */,
 				1AAEDBEE23C2DB0800846350 /* LoanModelController.swift in Sources */,
+				1ACBAF3D23C7F37F00FBF910 /* ShiftableViewController.swift in Sources */,
 				1A933B7E23ADD6FD00F11227 /* SceneDelegate.swift in Sources */,
 				1AE161C623C63F6F00E0A605 /* RatesViewController.swift in Sources */,
 				1ABA6D6F23B80AC00003AB12 /* MortgageCalcViewController.swift in Sources */,

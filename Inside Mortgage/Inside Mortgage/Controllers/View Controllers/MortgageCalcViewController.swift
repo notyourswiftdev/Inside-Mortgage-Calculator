@@ -9,11 +9,11 @@
 import UIKit
 import Charts
 
-class MortgageCalcViewController: UIViewController {
+class MortgageCalcViewController: ShiftableViewController {
     
     //MARK: - Variables
     let loanModel = LoanModelController()
-    var term = 0
+    var term = 360
     
     //MARK: - IBOutlet
 //    @IBOutlet var chartsView: PieChartView!
@@ -37,6 +37,7 @@ class MortgageCalcViewController: UIViewController {
         super.viewDidLoad()
         homePriceTextField.delegate = self
         downPaymentTextField.delegate = self
+        ratesTextField.delegate = self
         termSegment.addTarget(self, action: #selector(MortgageCalcViewController.termSegment(_:)), for: .valueChanged)
         update()
     }
@@ -79,7 +80,7 @@ class MortgageCalcViewController: UIViewController {
 }
 
 //MARK: - Extensions
-extension MortgageCalcViewController: UITextFieldDelegate {
+extension MortgageCalcViewController {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.endEditing(true)
         return true
@@ -93,10 +94,16 @@ extension MortgageCalcViewController: UITextFieldDelegate {
         switch textField {
         case homePriceTextField:
             homeSlider.value = Float(unwrappedPrice)
+            textField.text = loanModel.currencyFormatter(xxx: Double(homeSlider.value))
+            update()
         case downPaymentTextField:
             downPaymentSlider.value = Float(unwrappedPrice)
+            textField.text = loanModel.currencyFormatter(xxx: Double(downPaymentSlider.value))
+            update()
         case ratesTextField:
             ratesSlider.value = Float(unwrappedPrice)
+            textField.text = loanModel.percentFormatter(xxx: Double(ratesSlider.value))
+            update()
         default:
             break
         }

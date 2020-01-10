@@ -18,23 +18,21 @@ import UIKit
 // Step7: multiply the number from step6 by loanAmount = monthly payment
 
 class LoanModelController {
-
-    var loan = LoanData()
     
     func createPrinciple(with homePrice: Double?, downPayment: Double?) -> String {
         guard let unwrapHomePrice = homePrice,
-            let unwrapDownPayment = downPayment else { return "" }
+            let unwrapDownPayment = downPayment else { return "0" }
         return currencyFormatter(xxx: Double(unwrapHomePrice - unwrapDownPayment))
     }
     
     func createInterestRate(with annualRate: Double?) -> String {
-        guard let unwrapAnnualRate = annualRate else { return "" }
+        guard let unwrapAnnualRate = annualRate else { return "0" }
         let monthlyInterest = unwrapAnnualRate / 12
         return percentFormatter(xxx: Double(1+(monthlyInterest / 100)))
     }
     
     func createNumberOfPayments(with termLife: Double?) -> String {
-        guard let unwrapTerm = termLife else { return "" }
+        guard let unwrapTerm = termLife else { return "0" }
         return String(unwrapTerm)
     }
     
@@ -42,9 +40,11 @@ class LoanModelController {
         guard let unwrapHomePrice = homePrice,
             let unwrapDownPayment = downPay,
             let unwrapAnnualRate = annualRate,
-            let unwrapTerm = termLife else { return "" }
+            let unwrapTerm = termLife else { return "0" }
+        
+        let annualRate = max(0.00001, unwrapAnnualRate)
         let principle = unwrapHomePrice - unwrapDownPayment
-        return currencyFormatter(xxx: Double(principle * ((unwrapAnnualRate/100) / 12)) / (1 - pow(1+((unwrapAnnualRate/100)/12), -unwrapTerm)))
+        return currencyFormatter(xxx: Double(principle * ((annualRate/100) / 12)) / (1 - pow(1+((annualRate/100)/12), -unwrapTerm)))
     }
     
     func currencyFormatter(xxx: Double) -> String {
@@ -52,7 +52,7 @@ class LoanModelController {
         currencyFormatter.usesGroupingSeparator = true
         currencyFormatter.numberStyle = .currency
         currencyFormatter.locale = Locale(identifier: "en_US")
-        return currencyFormatter.string(from: xxx as NSNumber) ?? ""
+        return currencyFormatter.string(from: xxx as NSNumber) ?? "0"
     }
     
     func percentFormatter(xxx: Double) -> String {
@@ -62,6 +62,6 @@ class LoanModelController {
         percentFormatter.usesSignificantDigits = true
         percentFormatter.minimumSignificantDigits = 4
         percentFormatter.locale = Locale(identifier: "en_US")
-        return percentFormatter.string(from: xxx as NSNumber) ?? ""
+        return percentFormatter.string(from: xxx as NSNumber) ?? "0"
     }
 }
